@@ -1,0 +1,38 @@
+{
+  "manifest_version": 3,
+  "name": "Productivity Tracker",
+  "version": "1.0",
+  "description": "Track and enhance your productivity by setting goals and monitoring website usage.",
+  "permissions": ["tabs", "storage", "activeTab", "scripting"],
+  "host_permissions": ["http://*/*", "https://*/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    },
+    "action": {
+      "default_popup": "popup.html"
+    }
+  },
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "env": {
+    "browser": true,
+    "webextensions": true
+  },
+  "web_accessible_resources": [
+    {
+        "resources": ["dashboard.html"],
+        "matches": ["<all_urls>"]
+    }
+]
+}
+
