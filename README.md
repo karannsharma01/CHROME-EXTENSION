@@ -35,6 +35,7 @@ All user data, including goals and time logs, are stored locally using chrome.st
 
 5. Error Handling:
 If the extension encounters an issue, such as restricted permissions or invalid inputs, it notifies the user with clear error messages.
+
 This extension empowers users to optimize their productivity by offering actionable insights into their daily online habits and progress toward their goals.
 
 # OUTPUT:
