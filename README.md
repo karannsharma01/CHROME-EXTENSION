@@ -1,4 +1,4 @@
-# WEATHER-DASHBOARD
+# CHROME-EXTENSION-FOR-PERSONAL-PRODUCTIVITY-TRACKER
 
 **COMPANY**: CODTECH IT SOLUTIONS
 
@@ -13,24 +13,29 @@
 **MENTOR NAME**: NEELA SANTHOSH
 
 # DESCRIPTION:
-The Weather Dashboard is a web application built with React that allows users to retrieve real-time weather information for any city worldwide. It uses the OpenWeatherMap API to fetch current weather conditions, such as temperature, humidity, wind speed, and a short description of the weather. The application is designed with a clean and responsive interface, making it accessible and user-friendly on both desktop and mobile devices.
+The Productivity Tracker is a Chrome extension built with React to help users track and enhance their productivity. It enables users to set daily goals, monitor the time spent on specific websites, and visualize productivity trends. The extension integrates browser APIs to track browsing activity and provides insights in an interactive and user-friendly dashboard.
 
-## Tools and Technologies Used:
-1. React.js: Core library for building the interactive user interface.
-React's state management (useState) to handle form inputs and display weather data dynamically.
-2. Axios: A popular HTTP client library used to make API requests to the OpenWeatherMap API.
-3. OpenWeatherMap API: Source for real-time weather data, providing details like temperature, humidity, and weather conditions.
-4. Bootstrap: CSS framework used for basic styling and layout to ensure consistency and responsiveness.
+# Tools and Technologies Used:
+1. React.js: Used for building the interactive user interface. React's state management (useState and useEffect) dynamically updates the extension's dashboard.
+2. Chrome Extension APIs: Browser APIs such as chrome.storage and chrome.tabs are utilized to store data, monitor active tabs, and track website usage.
+3. Chart.js: A library used for creating visual representations of productivity trends with interactive charts.
+4. Bootstrap: Ensures a clean and responsive design for the extension’s popup and dashboard interface.
+# How It Works:
+1. Daily Goal Setting:
+Users can set a daily productivity goal in the extension's popup interface.
 
-## How It Works:
-1. Input Field: Users can type a city name into the input field and submit their request.
-2. API Integration: The application sends a request to the OpenWeatherMap API with the entered city name.
-3. Data Display: If the city is found, the weather data is displayed on a card with details such as:
-Temperature (°C)
-Weather description (e.g., clear sky, rain)
-Humidity
-Wind speed
-4. Error Handling: If the city name is invalid, the user receives an error message prompting them to try again.
+2. Website Tracking:
+The extension monitors the user's time spent on specific websites in real time using the browser activity APIs.
+
+3. Productivity Visualization:
+A dashboard visualizes the time spent on different websites with detailed charts, helping users identify patterns in their browsing behavior.
+
+4. Data Storage:
+All user data, including goals and time logs, are stored locally using chrome.storage, ensuring privacy and persistence across browser sessions.
+
+5. Error Handling:
+If the extension encounters an issue, such as restricted permissions or invalid inputs, it notifies the user with clear error messages.
+This extension empowers users to optimize their productivity by offering actionable insights into their daily online habits and progress toward their goals.
 
 # OUTPUT:
 
